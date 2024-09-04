@@ -41,6 +41,7 @@ let points = [
      p8 = new point(43.2542861111,-87.9151222222,'Dining Hall'),
      p9 = new point(43.2544361111,-87.9150916667,'Chapel Hall West'),
      p10 = new point(43.254325,-87.9144583333,'Chapel')
+    // p11 = new point (43.25430773396377, -87.91330494653333, 'Room')
    
 
 ];

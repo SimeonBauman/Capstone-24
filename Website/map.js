@@ -6,8 +6,8 @@ let hasPath = false;
     getLocation();
     
     
-    scalePoints(0,400);
-    drawMap();
+    //scalePoints(0,400);
+    //drawMap();
 })();
 
 function drawMap(){
