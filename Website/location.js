@@ -1,7 +1,7 @@
 
 function getLocation() {
   if (navigator.geolocation) {
-    let pos = navigator.geolocation.getCurrentPosition(showPosition);
+    //let pos = navigator.geolocation.getCurrentPosition(showPosition);
   } else {
     console.log("no loaction avaiable");
   }
