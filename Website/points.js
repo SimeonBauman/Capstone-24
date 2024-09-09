@@ -62,29 +62,34 @@ let points = [
 ];
 
 
-AddConnectionsByName('Welcome Center','Luther');
-AddConnectionsByName('Luther','RP');
-AddConnectionsByName('Luther','Rincker Stairs');
-AddConnectionsByName('Rincker Stairs', 'Stunkle East');
-AddConnectionsByName('Stunkle East', 'Computer Science');
-AddConnectionsByName('Computer Science', 'Stunkle West');
-AddConnectionsByName('Stunkle East', 'Dining Hall');
-AddConnectionsByName('Dining Hall', 'Chapel Hall West');
-AddConnectionsByName('Chapel Hall West', 'Chapel');
-AddConnectionsByName('Rincker Stairs', 'Health Services');
-AddConnectionsByName('Health Services', 'Heildleberg');
-AddConnectionsByName('Heildleberg', 'Lober South')
-AddConnectionsByName('Lober South', 'Art Gallery');
-AddConnectionsByName('Lober South', 'Stunkle West');
-AddConnectionsByName('Art Gallery', 'Wittenberg');
-AddConnectionsByName('Dining Hall', 'Bookstore');
-AddConnectionsByName('Bookstore', 'Albrecht Stairs');
-AddConnectionsByName('Albrecht Stairs', 'Wartberg South');
-AddConnectionsByName('Wartberg South', 'Wartberg Stairs');
-AddConnectionsByName('Wartberg South', 'Terace Room');
-AddConnectionsByName('Chapel', 'Chapel Hall East');
-AddConnectionsByName('Chapel Hall East', 'Augsburg');
-AddConnectionsByName('Chapel Hall East', 'Katharine');
-AddConnectionsByName('Katharine', 'CIC');
-AddConnectionsByName('Health Services', 'PT');
+function connect() {
 
+    AddConnectionsByName('Welcome Center', 'Luther');
+    AddConnectionsByName('Luther', 'RP');
+    AddConnectionsByName('Luther', 'Rincker Stairs');
+    AddConnectionsByName('Rincker Stairs', 'Stunkle East');
+    AddConnectionsByName('Stunkle East', 'Computer Science');
+    AddConnectionsByName('Computer Science', 'Stunkle West');
+    AddConnectionsByName('Stunkle East', 'Dining Hall');
+    AddConnectionsByName('Dining Hall', 'Chapel Hall West');
+    AddConnectionsByName('Chapel Hall West', 'Chapel');
+    AddConnectionsByName('Rincker Stairs', 'Health Services');
+    AddConnectionsByName('Health Services', 'Heildleberg');
+    AddConnectionsByName('Heildleberg', 'Lober South')
+    AddConnectionsByName('Lober South', 'Art Gallery');
+    AddConnectionsByName('Lober South', 'Stunkle West');
+    AddConnectionsByName('Art Gallery', 'Wittenberg');
+    AddConnectionsByName('Dining Hall', 'Bookstore');
+    AddConnectionsByName('Bookstore', 'Albrecht Stairs');
+    AddConnectionsByName('Albrecht Stairs', 'Wartberg South');
+    AddConnectionsByName('Wartberg South', 'Wartberg Stairs');
+    AddConnectionsByName('Wartberg South', 'Terace Room');
+    AddConnectionsByName('Chapel', 'Chapel Hall East');
+    AddConnectionsByName('Chapel Hall East', 'Augsburg');
+    AddConnectionsByName('Chapel Hall East', 'Katharine');
+    AddConnectionsByName('Katharine', 'CIC');
+    AddConnectionsByName('Health Services', 'PT');
+}
+
+
+connect();
