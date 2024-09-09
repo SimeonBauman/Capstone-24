@@ -29,7 +29,7 @@ function AddConnectionsByName(name1,name2){
 }
 
 
-//scalled by * 5, added 73.6111 to x and 155.6667 to y
+
 let points = [
     p1 = new point(43.2532694444, -87.9146722222, 'Welcome center'),
     p2 = new point(43.2524888889, -87.9151333333, 'RP'),
@@ -54,7 +54,8 @@ let points = [
     p21 = new point(43.25430338722528, -87.91372005248567, 'Chapel Hall East'),
     p22 = new point(43.25448908349317, -87.91368797069748, 'Augsburg'),
     p23 = new point(43.253819203176114, -87.91378122839954, 'Katharine'),
-    p24 = new point(43.25371462408858, -87.91377603846044, 'CIC')
+    p24 = new point(43.25371462408858, -87.91377603846044, 'CIC'),
+    p25 = new point(43.25278771117715, -87.91560848113751, 'PT')
 
    
 
@@ -85,4 +86,5 @@ AddConnectionsByName('Chapel', 'Chapel Hall East');
 AddConnectionsByName('Chapel Hall East', 'Augsburg');
 AddConnectionsByName('Chapel Hall East', 'Katharine');
 AddConnectionsByName('Katharine', 'CIC');
+AddConnectionsByName('Health Services', 'PT');
 
