@@ -42,9 +42,8 @@ let points = [
     p9 = new point(43.2544361111,-87.9150916667,'Chapel Hall West'),
     p10 = new point(43.254325, -87.9144583333, 'Chapel'),
     p11 = new point(43.25341933698241, -87.91623857228817, 'Lober South'),
-    p12 = new point(43.25344598084229, -87.91623211655772, 'Wittenberg Bridge'),
     p13 = new point(43.253437189941685, -87.91690132770856, 'Art Gallery'),
-    p14 = new point(43.253436213175235, -87.91753432904848, 'Wittenberg'),
+    p14 = new point(43.253436213175235, -87.91753432904848, 'Wittenberg')
 
    
 
@@ -60,9 +59,8 @@ AddConnectionsByName('Computer Science', 'Stunkle West');
 AddConnectionsByName('Stunkle East', 'Dining Hall');
 AddConnectionsByName('Dining Hall', 'Chapel Hall West');
 AddConnectionsByName('Chapel Hall West', 'Chapel');
-AddConnectionsByName('Rincker Stairs', 'Lober south');
-AddConnectionsByName('Lober south', 'Wittenberg Bridge');
-AddConnectionsByName('Wittenberg Bridge', 'Art Gallery');
-AddConnectionsByName('Wittenberg Bridge', 'Stunkle West');
+AddConnectionsByName('Rincker Stairs', 'Lober South');
+AddConnectionsByName('Lober South', 'Art Gallery');
+AddConnectionsByName('Lober South', 'Stunkle West');
 AddConnectionsByName('Art Gallery', 'Wittenberg');
 
