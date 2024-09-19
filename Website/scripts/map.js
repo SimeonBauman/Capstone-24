@@ -2,13 +2,21 @@ let scale = 1;
 let hasPath = false;
 (async function () {
     await new Promise(r => setTimeout(r, 5));
-    
+
+    setBackground();
     getLocation();
     
     
     //scalePoints(0,400);
     //drawMap();
 })();
+
+
+function setBackground() {
+    var canvas = document.getElementById("canvas");
+
+    context.setBackground('../images/CUW-map');
+}
 
 function drawMap(){
     for(let i = 0; i < points.length; i++){
