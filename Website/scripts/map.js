@@ -15,9 +15,12 @@ let hasPath = false;
 function setBackground() {
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext("2d");
-    
+    var background = new Image();
+    background.src = "https://simeonbauman.github.io/Capstone-24/Website/images/CUW-map.png";
 
-    context.setBackground('https://simeonbauman.github.io/Capstone-24/Website/images/CUW-map.png');
+    background.onload = function () {
+        context.drawImage(background, 0, 0);
+    }
 }
 
 function drawMap(){
