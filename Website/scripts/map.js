@@ -17,7 +17,7 @@ function setBackground() {
     var context = canvas.getContext("2d");
     
 
-    context.setBackground('../images/CUW-map');
+    context.setBackground('../images/CUW-map.png');
 }
 
 function drawMap(){
