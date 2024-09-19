@@ -14,6 +14,8 @@ let hasPath = false;
 
 function setBackground() {
     var canvas = document.getElementById("canvas");
+    var context = canvas.getContext("2d");
+    
 
     context.setBackground('../images/CUW-map');
 }
