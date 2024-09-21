@@ -18,7 +18,7 @@ function generateDirections(p1,p2,p3) {
         return "";
     }
 
-    r
+    
 }
 
 
