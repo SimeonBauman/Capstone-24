@@ -40,7 +40,7 @@ let points = [
     p8 = new point(43.2542861111, -87.9151222222, 'Dining Hall'),
     p9 = new point(43.2544361111, -87.9150916667, 'Chapel Hall West'),
     p10 = new point(43.254325, -87.9144583333, 'Chapel'),
-   /* p11 = new point(43.25341933698241, -87.91623857228817, 'Lober South'),
+    p11 = new point(43.25341933698241, -87.91623857228817, 'Lober South'),
     p12 = new point(43.2533900881995, -87.91596479271088, 'Heildleberg'),
     p13 = new point(43.253437189941685, -87.91690132770856, 'Art Gallery'),
     p14 = new point(43.253436213175235, -87.91753432904848, 'Wittenberg'),
@@ -54,7 +54,7 @@ let points = [
     p22 = new point(43.25448908349317, -87.91368797069748, 'Augsburg'),
     p23 = new point(43.253819203176114, -87.91378122839954, 'Katharine'),
     p24 = new point(43.25371462408858, -87.91377603846044, 'CIC'),
-    p25 = new point(43.25278771117715, -87.91560848113751, 'PT')*/
+    p25 = new point(43.25278771117715, -87.91560848113751, 'PT')
 
    
 
@@ -72,7 +72,7 @@ function connect() {
     AddConnectionsByName('Stunkle East', 'Dining Hall');
     AddConnectionsByName('Dining Hall', 'Chapel Hall West');
     AddConnectionsByName('Chapel Hall West', 'Chapel');
-   /* AddConnectionsByName('Rincker Stairs', 'Health Services');
+    AddConnectionsByName('Rincker Stairs', 'Health Services');
     AddConnectionsByName('Health Services', 'Heildleberg');
     AddConnectionsByName('Heildleberg', 'Lober South')
     AddConnectionsByName('Lober South', 'Art Gallery');
@@ -87,7 +87,7 @@ function connect() {
     AddConnectionsByName('Chapel Hall East', 'Augsburg');
     AddConnectionsByName('Chapel Hall East', 'Katharine');
     AddConnectionsByName('Katharine', 'CIC');
-    AddConnectionsByName('Health Services', 'PT');*/
+    AddConnectionsByName('Health Services', 'PT');
 }
 
 
