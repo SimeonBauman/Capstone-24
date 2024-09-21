@@ -3,7 +3,7 @@ let hasPath = false;
 (async function () {
     await new Promise(r => setTimeout(r, 5));
 
-    setBackground();
+    //setBackground();
     getLocation();
     
     
@@ -61,13 +61,9 @@ function scalePoints(min, max){
         if((points[i].y  + yAddition) > yMax) yMax = points[i].y + yAddition;
     }
     
- 
-
-    
     while(xMult == -1 || yMult == -1){
         if(xMax * scalar > max && xMult == -1) xMult = scalar - 1;
         if(yMax * scalar > max && yMult == -1) yMult = scalar - 1;
-        //console.log(scalar);
         scalar += 1;
     }
     
