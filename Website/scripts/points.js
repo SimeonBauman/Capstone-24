@@ -72,7 +72,7 @@ function connect() {
     AddConnectionsByName('Stunkle East', 'Dining Hall');
     AddConnectionsByName('Dining Hall', 'Chapel Hall West');
     AddConnectionsByName('Chapel Hall West', 'Chapel');
-    AddConnectionsByName('Rincker Stairs', 'Health Services');
+   /* AddConnectionsByName('Rincker Stairs', 'Health Services');
     AddConnectionsByName('Health Services', 'Heildleberg');
     AddConnectionsByName('Heildleberg', 'Lober South')
     AddConnectionsByName('Lober South', 'Art Gallery');
@@ -87,8 +87,8 @@ function connect() {
     AddConnectionsByName('Chapel Hall East', 'Augsburg');
     AddConnectionsByName('Chapel Hall East', 'Katharine');
     AddConnectionsByName('Katharine', 'CIC');
-    AddConnectionsByName('Health Services', 'PT');
+    AddConnectionsByName('Health Services', 'PT');*/
 }
 
 
-//connect();
+connect();
