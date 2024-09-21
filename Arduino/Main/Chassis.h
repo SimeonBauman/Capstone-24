@@ -7,11 +7,11 @@ class chassis{
   private:
     Servo left;
     Servo right;
-    int reversed = 3;
+    int reversed = 89;
 
   public :
 
-    chassis(int leftPin, int rightPin, int reversed = 3){
+    chassis(int leftPin, int rightPin, int reversed = 89){
       this->left.attach(leftPin);
       this->right.attach(rightPin);
       this->reversed = reversed;

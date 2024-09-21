@@ -10,6 +10,7 @@ int n = 0;
 
 void setup(){
   Servo1.attach(servoPin);
+  pinMode(servoPin,OUTPUT);
   Serial.begin(9600);
 }
 
@@ -21,6 +22,7 @@ ULS sensor(7,8);
 
 void loop(){
   avoidObs(12);
+ 
     
 }
 
