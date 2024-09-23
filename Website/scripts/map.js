@@ -3,7 +3,7 @@ let hasPath = false;
 (async function () {
     await new Promise(r => setTimeout(r, 5));
 
-    //setBackground();
+    setBackground();
     getLocation();
     
     
