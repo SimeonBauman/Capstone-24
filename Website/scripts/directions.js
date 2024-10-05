@@ -9,9 +9,10 @@ function crossProduct(v1, v2) {
 }
 
 // Function to generate directions based on a list of points
-function generateDirections(p1,p2,p3) {
-    const v1 = vectorFromPoints(p1, p2);
-    const v2 = vectorFromPoints(p2, p3);
+function generateDirections(points) {
+    for( i  = 1; i < points.length - 1; i++)
+    const v1 = vectorFromPoints(points[i-1], points[i]);
+    const v2 = vectorFromPoints(points[i], points[i+1]);
     const cross = crossProduct(v1, v2);
     if (cross < 0) {
         return "left";
