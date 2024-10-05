@@ -50,7 +50,7 @@ function drawPoint(point,scale){
     f = scalePoint(point);
     //console.log(x);
     //console.log(y);
-    context.fillRect(f.x,f.y,10,10);
+    context.fillRect(f.x-5,f.y-5,10,10);
 }
 
 function drawLine(p1,p2,scale){
