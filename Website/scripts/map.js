@@ -47,7 +47,7 @@ function drawPoint(point,scale){
     var canvas = document.getElementById("canvas");
     var context = canvas.getContext("2d");
     context.strokeStyle = 'blue';
-    f = new vector2 scalePoint;
+    f = scalePoint(point);
     //console.log(x);
     //console.log(y);
     context.fillRect(f.x,f.y,10,10);
