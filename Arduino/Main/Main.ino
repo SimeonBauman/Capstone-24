@@ -15,7 +15,7 @@ void setup(){
 }
 
 
-chassis bot(20,12);
+chassis bot(9,10);
 ULS sensor(7,8);
 
 
