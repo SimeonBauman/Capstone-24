@@ -73,8 +73,8 @@ function drawPath(points){
     var context = canvas.getContext("2d");
     context.beginPath();
     for(let i = 0; i < points.length-1; i++){
-        temp1 = scalePoint(p1)
-        temp2 = scalePoint(p2)
+        temp1 = scalePoint(points[i])
+        temp2 = scalePoint(points[i+1])
         context.moveTo(temp1.x,temp1.y);
         context.lineTo(temp2.x,temp2.y);
         context.strokeStyle = 'blue';
