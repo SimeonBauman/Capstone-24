@@ -61,7 +61,7 @@ function displayPath(){
     val+= bestPath[bestPath.length-1].name;
     console.log(val);
     drawPath(bestPath);
-    //generateDirections(bestPath);
+    generateDirections(bestPath);
 }
 
 
