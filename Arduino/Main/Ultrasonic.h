@@ -26,8 +26,8 @@ class ULS{
       inches = this->microsecondsToInches(duration);
   
 
-      Serial.print(inches);
-      Serial.print("in, ");
+      //Serial.print(inches);
+      //Serial.print("in, ");
       Serial.println();
 
       delay(100);
