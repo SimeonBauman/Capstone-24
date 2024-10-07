@@ -2,41 +2,40 @@
 #include "Chassis.h"
 #include "Ultrasonic.h"
 
-#include <Wire.h>
-Servo left;
-Servo right;
+const int forPin = 8;
+const int backPin = 12;
+const int speedControl = 9;
 
-int servoPin = 11;
-int n = 0;
+int i = 255;
 
 void setup(){
-  Serial.begin(9600);
-  left.attach(12);
-  right.attach(10);
+
+  pinMode(forPin, OUTPUT);
+  pinMode(backPin, OUTPUT);
 }
 
-
-//chassis bot(12,10,89);
-ULS sensor(7,8);
-
-int center = 111;
-
+bool rev = false;
 void loop(){
- if(sensor.getDistance() > 12){
-    left.write(0);
-  }
-  else{
-    left.write(180);
-  }
-    right.write(89);
-    delay(20);
-}
 
-/*void avoidObs(float dist){
-  if(sensor.getDistance() > dist){
-    bot.moveForward();
+    analogWrite(speedControl,i);
+    if(rev){
+      digitalWrite(forPin,LOW);
+      digitalWrite(backPin,HIGH);
+    }
+    else{
+      digitalWrite(forPin,HIGH);
+      digitalWrite(backPin,LOW);
+    }
+
+  i--;
+  if(i<0){
+    i = 255;
+    if(rev){
+      rev = false;
+    }
+    else{
+      rev = true;
+    }
   }
-  else{
-    bot.moveBack();
-  }
-}*/
+  delay(20);
+}
