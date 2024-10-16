@@ -7,7 +7,7 @@ class chassis{
     
     ULS* sensor = new ULS(7,8);
     motor* left_motor = new motor(13,12,11);
-    motor* right_motor = new motor(0,0,0);
+    motor* right_motor = new motor(5,4,3);
 
   public:
    
