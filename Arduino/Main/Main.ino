@@ -10,5 +10,6 @@ void setup(){
 
 
 void loop(){
-   bot.move(bot.getSensorValue() * 5);
+   //bot.move(-bot.getSensorValue() * 5,100);
+   bot.avoidOBS(bot.getSensorValue(), 10);
 }
