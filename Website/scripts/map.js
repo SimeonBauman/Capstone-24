@@ -38,7 +38,7 @@ function drawMap(){
 
 
 function scalePoint(point){
-    f = new vector2 ((point.y +87.91804830519975) * 330264.3921965,(-point.x + 43.25539679928404) * 430111.610908);
+    f = new vector2 ((point.y +87.91804830519975) * 325821.3734674177,(-point.x + 43.25539679928404) * 430111.610908);
     return f;
 }
 
