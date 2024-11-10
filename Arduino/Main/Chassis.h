@@ -11,6 +11,11 @@ class chassis{
 
     float errorTime = -1;
 
+    float error = 0;
+    float integral = 0;
+    float der = 0;
+    float previousError = 10000000;
+
   public:
    
     
@@ -34,10 +39,16 @@ class chassis{
     }
 
     void avoidOBS(int distance, int limit){
-      float error = (distance - limit);
-      this->move(error*8,100);
-      this->checkError(error, limit/4);
+      this->error = (distance - limit);
+      this->integral = (this->integral + this->error) *.005;
+      this->der = (this->error - this->previousError)/.005;
+      this->previousError = this->error;
+      float output = (8 * this->error + .5 * this->integral + .001 * this->der);
+      this->move(output,175);
+      Serial.println(output);
+      this->checkError(this->error, limit/4);
     }
+    
     void checkError(float error, int margin){
       if(error > -margin && error < margin){
         if(this->errorTime == -1){
@@ -48,6 +59,7 @@ class chassis{
           delay(500);
           this->turn(0);
           this->errorTime = -1;
+          this->resetPID();
         }
         
       }
@@ -55,6 +67,13 @@ class chassis{
       else{
         this->errorTime=-1;
       }
+    }
+
+    void resetPID(){
+      this->error = 0;
+      this-> integral = 0;
+      this-> der = 0;
+      this-> previousError = 10000;
     }
 
 };
