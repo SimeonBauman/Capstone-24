@@ -4,7 +4,8 @@ function getLocation() {
     let pos = navigator.geolocation.getCurrentPosition(showPosition);
   } else {
     console.log("no loaction avaiable");
-  }
+    }
+    window.location.href = "selector.html";
 }
 
 function showPosition(position) {

@@ -14,15 +14,12 @@ let bestPath = [];
 let destination;
 
 function findPath(start, end){
-    let p1 = points[0];
-    let p2 = points[0];
-    for(let i = 0; i < points.length; i++){
-        if(points[i].name == start) p1 = points[i];
-        else if (points[i].name == end) p2 = points[i];
-    }
+    let p1 = points[start];
+    let p2 = points[end];
+    
     destination = p2;
     takeSteps(p1);
-    document.getElementById("dist").innerHTML = bestDistance;
+    //document.getElementById("dist").innerHTML = bestDistance;
     displayPath();
 }
 

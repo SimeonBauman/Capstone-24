@@ -4,7 +4,7 @@ let hasPath = false;
     await new Promise(r => setTimeout(r, 5));
 
     setBackground();
-    getLocation();
+    //getLocation();
     
     
     //scalePoints(0,400);
@@ -20,7 +20,10 @@ function setBackground() {
 
     background.onload = function () {
         context.drawImage(background, 0, 0);
+        findPath(sessionStorage.getItem('startVal'), sessionStorage.getItem('endVal'));
+        console.log(sessionStorage.getItem('startVal'));
     }
+    
 }
 
 function drawMap(){

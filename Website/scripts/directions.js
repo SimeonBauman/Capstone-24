@@ -1,14 +1,16 @@
-function createDirections(path){
-    let dir = "";
+const dir = [];
+function createDirections(path) {
+    
     let head = 0;
     for(let i = 1; i < path.length-1; i++){
         let deg = cosineLaw(path[i-1],path[i],path[i+1]);
         
         if(deg < 160){
-            dir += generateDirections(path[i-1],path[i],path[i+1]);
+            dir.push(generateDirections(path[i-1],path[i],path[i+1]));
         }
     }
     console.log(dir);
+    cycleImages();
 }
 function cosineLaw(p1,p2,p3){
     let c = distance(p1,p3);
@@ -49,4 +51,18 @@ function generateDirections(p1,p2,p3) {
     }
 
     
+}
+
+let rightArrow = "https://simeonbauman.github.io/Capstone-24/Website/images/rightArrow.png";
+let leftArrow = "https://simeonbauman.github.io/Capstone-24/Website/images/leftArrow.png";
+
+function cycleImages() {
+    var img = document.getElementById("dir");
+    if (dir[0] == "right") {
+        img.src = rightArrow;
+    }
+    else {
+        img.src = leftArrow;
+    }
+    dir.shift();
 }
