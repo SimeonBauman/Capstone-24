@@ -5,6 +5,7 @@ function getLocation() {
   } else {
     console.log("no loaction avaiable");
     }
+
     window.location.href = "selector.html";
 }
 
