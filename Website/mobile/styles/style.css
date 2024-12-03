@@ -1,15 +1,15 @@
 .button-class {
-    margin: auto 40%;
+    margin: auto 12.5%;
     background-color: #2b5597;
-    color: red;
+    color: white;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 60px;
     cursor: pointer;
     border-radius: 4px;
-    width: 20%;
+    width: 75%;
 }
 
 .Title {
@@ -19,7 +19,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 50px;
+    font-size: 90px;
     cursor: pointer;
     border-radius: 4px;
     width: 75%;
