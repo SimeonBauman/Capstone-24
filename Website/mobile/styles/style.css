@@ -55,15 +55,14 @@
 .selector {
     margin: auto 10%;
     color: black;
-    padding: 12px 20px;
+    padding: 10% 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 25px;
+    font-size: 60px;
     cursor: pointer;
     border-radius: 4px;
     width: 80%;
-    height: 20%;
 }
 
 .option {
