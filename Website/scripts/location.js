@@ -17,3 +17,4 @@ function showPosition(position) {
    
     drawMap();
 }
+

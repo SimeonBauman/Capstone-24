@@ -1,0 +1,80 @@
+.button-class {
+    margin: auto 40%;
+    background-color: #2b5597;
+    color: red;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 20%;
+}
+
+.Title {
+    margin: auto 12.5%;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 50px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 75%;
+}
+
+.sub_title {
+    margin: auto 12.5%;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 75%;
+}
+
+.no_location {
+    margin: 10px 42.5%;
+    background-color: #545454;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 15%;
+}
+
+.selector {
+    margin: auto 20%;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 60%;
+}
+
+.option {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 90%;
+}
+
+.image {
+    margin: auto 25%;
+    width: 50%;
+}
