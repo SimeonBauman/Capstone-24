@@ -61,7 +61,7 @@ function cycleImages() {
     if (dir[0] == "right") {
         img.src = rightArrow;
     }
-    else {
+    else if (dir[0] == "left"){
         img.src = leftArrow;
     }
     dir.shift();
