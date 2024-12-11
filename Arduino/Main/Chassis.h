@@ -1,6 +1,7 @@
 #include "Ultrasonic.h"
 #include "Motor.h"
 
+//Chassis class to hold all bot components (motors, sensors)
 class chassis{
 
   private:
@@ -23,21 +24,26 @@ class chassis{
 
       this->move(0);
     }
+
+    //moves motors at set speed and enforces a maximum speed
     void move(int speed, int max =255){
       if(speed > max) speed = max;
       left_motor->move(speed);
       right_motor->move(-speed);
     }
 
+    //sets the motors to move a reverse speeds, causing the bot to turn
     void turn(int speed){
       this->left_motor->move(speed);
       this->right_motor->move(speed);
     }
 
+    //asks the ultrasonic sensor for its value
     float getSensorValue(){
       return sensor->getDistance();
     }
 
+    //PID implementation (read notebook for more details)
     void avoidOBS(int distance, int limit){
       this->error = (distance - limit);
       this->integral = (this->integral + this->error) *.005;
@@ -48,7 +54,8 @@ class chassis{
       Serial.println(output);
       this->checkError(this->error, limit/4);
     }
-    
+
+    //checks to see if PID function should break
     void checkError(float error, int margin){
       if(error > -margin && error < margin){
         if(this->errorTime == -1){
@@ -69,6 +76,7 @@ class chassis{
       }
     }
 
+    //resets PID variables
     void resetPID(){
       this->error = 0;
       this-> integral = 0;
