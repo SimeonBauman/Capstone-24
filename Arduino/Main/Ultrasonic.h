@@ -1,3 +1,4 @@
+//implements the ultrasonic sensor
 class ULS{
 
   private:
@@ -13,6 +14,7 @@ class ULS{
       pinMode(echoPin,INPUT);
     }
 
+    //converts the sensor value to inches and returns it
     float getDistance(){
       float duration, inches, cm;
 
