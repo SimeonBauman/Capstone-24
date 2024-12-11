@@ -1,3 +1,4 @@
+//Calculates the distance between two points
 function distance(p1,p2){
     let x = p2.x - p1.x;
     let y = p2.y - p1.y;
@@ -8,11 +9,13 @@ function distance(p1,p2){
     //document.getElementById("dist").innerHTML = p1.connections[0].name;
 }
 
+//global variables used for pathfinding
 let bestDistance = 100000000;
 let currentPath = [];
 let bestPath = [];
 let destination;
 
+//assigns the start and end points, takes the first set of the path
 function findPath(start, end){
     let p1 = points[start];
     let p2 = points[end];
@@ -23,6 +26,7 @@ function findPath(start, end){
     displayPath();
 }
 
+//takes steps through all points connections. If it finds path from the start to end it calculates the total length. Avoids going in circles.
 function takeSteps(node){
     currentPath.push(node);
     if(node == destination){ 
@@ -38,6 +42,7 @@ function takeSteps(node){
     return 0;
 }
 
+//Go through the current path and calculates how long it takes. If it is better than the current best is saves it as the best.
 function calcDistances(){
     let currDistance = 0;
     for(let i = 0; i < currentPath.length-1; i++){
@@ -49,6 +54,7 @@ function calcDistances(){
     }
 }
 
+//Creates the order of locations and tells the canvas to draw the best path
 function displayPath(){
     
     let val = "";
