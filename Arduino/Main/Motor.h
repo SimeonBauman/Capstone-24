@@ -1,3 +1,4 @@
+//motor class, sets motor pins and is it is reversed or not
 class motor{
 
   private:
@@ -20,6 +21,7 @@ class motor{
       pinMode(backPin, OUTPUT);
     }
 
+    //goes through all existing motors and applies the speed to it
     void move(int speed){
 
       speed *= reversed;
