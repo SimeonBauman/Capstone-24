@@ -1,3 +1,4 @@
+//Point object, holds global coords for pathfinding, name for labeling, and an empty list of connections
 class point{
     constructor(x,y,name){
         this.y = y
@@ -5,11 +6,13 @@ class point{
         this.name = name;
         this.connections = [];
     }
-    
+
+    //given a point it will add the other points to its connection list and add itself to the other point's connection list
     connect(other){
         this.connections.push(other);
         other.connections.push(this);
     }
+    //logs all the points connections
     listConnections(){
         for(let i = 0; i < this.connections.length; i++){
             console.log(this.connections[i].name);
@@ -17,6 +20,7 @@ class point{
     }
 }
 
+//connects two points use point.name ot confirm
 function AddConnectionsByName(name1,name2){
     let p1 = points[0];
     let p2 = points[0];
@@ -28,7 +32,7 @@ function AddConnectionsByName(name1,name2){
 }
 
 
-
+//creation of all points on the 100 level of campus
 let points = [
     p1 = new point(43.2532694444, -87.9146722222, 'Welcome center'),
     p2 = new point(43.2524888889, -87.9151333333, 'RP'),
@@ -66,7 +70,7 @@ let points = [
 
 ];
 
-
+//connects all points on the 100 level of campus
 function connect() {
 
     AddConnectionsByName('Welcome Center', 'Luther');
@@ -96,5 +100,5 @@ function connect() {
     AddConnectionsByName('Health Services', 'PT');
 }
 
-
+//calls the connection
 connect();
