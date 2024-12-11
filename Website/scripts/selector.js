@@ -1,10 +1,11 @@
 let userLocation = -1;
 
-
+//calls the fillSelectors function as first priority when the page is loaded
 window.onload = function () {
     fillSelectors()
 }
 
+//populates the lists with all possible destinations, selects the starting location if user allowed loaction
 function fillSelectors() {
     var start = document.getElementById("start");
     var end = document.getElementById("end");
@@ -19,6 +20,7 @@ function fillSelectors() {
         });
     }
 
+    //creates a new option for each point in points
     points.map((lang, i) => {
         let opt = document.createElement("option");
         opt.value = i;
@@ -28,6 +30,7 @@ function fillSelectors() {
     });
 }
 
+//saves the start and end user selections and sends the user to the navigation page
 function submit() {
     var start = document.getElementById("start");
     var end = document.getElementById("end");
