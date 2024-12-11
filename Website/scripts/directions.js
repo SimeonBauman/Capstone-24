@@ -1,4 +1,5 @@
 const dir = [];
+//checks if a step in the path needs a direction change
 function createDirections(path) {
     
     let head = 0;
@@ -12,6 +13,7 @@ function createDirections(path) {
     console.log(dir);
     cycleImages();
 }
+//determines the angle between 2 points (isn't currently in use)
 function cosineLaw(p1,p2,p3){
     let c = distance(p1,p3);
     let a = distance(p2,p3);
@@ -52,10 +54,11 @@ function generateDirections(p1,p2,p3) {
 
     
 }
-
+//Images to dsiplay directions to user
 let rightArrow = "https://simeonbauman.github.io/Capstone-24/Website/images/rightArrow.png";
 let leftArrow = "https://simeonbauman.github.io/Capstone-24/Website/images/leftArrow.png";
 
+//Displays the correct image for the nect direction
 function cycleImages() {
     var img = document.getElementById("dir");
     if (dir[0] == "right") {
